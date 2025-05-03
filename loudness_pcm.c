@@ -317,8 +317,6 @@ static snd_pcm_sframes_t transfer_callback(
         while (snd_ctl_read(context->ctl, event) > 0) {
             unsigned int i;
 
-            snd_ctl_read(context->ctl, event);
-
             /* There's only this one type of event, at the time of
              * writing, but one never knows what the future holds. */
 
